@@ -32,16 +32,13 @@ header{
     padding:18px 0;
 }
 .logo a{
-    background:url(../assets/images/logo.png) no-repeat 0 0;
+    background:url(../../assets/images/logo.png) no-repeat 0 0;
     height:126px;
     width:200px;
     display:block;
     margin-left: 10px;
 }
-.logo a:hover,
-.logo a:active{
-    background-position:0 -138px;
-}
+
 .menu{
     position:absolute;
     bottom:0;
@@ -138,7 +135,7 @@ header{
     color:#464646;
 }
 .icon{
-    background:url(../assets/images/icons.png) no-repeat 0 0;
+    background:url(../../assets/images/icons.png) no-repeat 0 0;
 }
 .go,
 .icon{
@@ -149,7 +146,7 @@ header{
     position:relative;
 }
 .go{
-    background:url(../assets/images/go.png) no-repeat;
+    background:url(../../assets/images/go.png) no-repeat;
     top:3px;
 }
 .fb{
@@ -214,7 +211,7 @@ header{
     z-index:2;
     width:8px;
     height:8px;
-    background:url(../assets/images/rt-arrow.png) no-repeat;
+    background:url(../../assets/images/rt-arrow.png) no-repeat;
 }
 .widget li:last-child{
     border-bottom:1px solid #2d2d2d;
@@ -259,7 +256,7 @@ header{
     width:16px;
     height:16px;
     cursor:pointer;
-    background:url(../assets/images/search.png) no-repeat;
+    background:url(../../assets/images/search.png) no-repeat;
     border:none;
     outline:none;
     position:relative;
