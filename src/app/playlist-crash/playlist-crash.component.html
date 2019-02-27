@@ -1,52 +1,17 @@
 <h2>Playlist Crash</h2>
-<div class="grid">
+
+
+<div class="grid" *ngFor="let link of Crash.items; let i = index">
   <div class="preview">
-    <a href="video-play.html" title=""><img src="../../assets/images/img.jpg" alt="#"></a>
-    <div class="time">00.00</div>
+    <iframe width="128" height="90" [src]="'https://www.youtube.com/embed/'+link.snippet.resourceId.videoId | safe" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+    </iframe>
+
   </div>
   <div class="data">
-    <h3><a href="video-play.html">Lorem Ipsum Dolor Sit amet</a></h3>
-    <div class="category"><span class="icon"></span> <a href="#">Tag name</a>, <a href="#">Tag</a></div>
+    <h3><a href="video-play.html">{{link.snippet.title}}</a></h3>
+    <!--<div class="category"><span class="icon"></span> <a href="#">Tag name</a>, <a href="#">Tag</a></div>-->
   </div>
 </div>
-<div class="grid">
-  <div class="preview">
-    <a href="video-play.html" title=""><img src="../../assets/images/img.jpg" alt="#"></a>
-    <div class="time">00.00</div>
-  </div>
-  <div class="data">
-    <h3><a href="video-play.html">Lorem Ipsum Dolor Sit amet</a></h3>
-    <div class="category"><span class="icon"></span> <a href="#">Tag name</a>, <a href="#">Tag</a></div>
-  </div>
-</div>
-<div class="grid">
-  <div class="preview">
-    <a href="video-play.html" title=""><img src="../../assets/images/img.jpg" alt="#"></a>
-    <div class="time">00.00</div>
-  </div>
-  <div class="data">
-    <h3><a href="video-play.html">Lorem Ipsum Dolor Sit amet</a></h3>
-    <div class="category"><span class="icon"></span> <a href="#">Tag name</a>, <a href="#">Tag</a></div>
-  </div>
-</div>
-<div class="grid">
-  <div class="preview">
-    <a href="video-play.html" title=""><img src="../../assets/images/img.jpg" alt="#"></a>
-    <div class="time">00.00</div>
-  </div>
-  <div class="data">
-    <h3><a href="video-play.html">Lorem Ipsum Dolor Sit amet</a></h3>
-    <div class="category"><span class="icon"></span> <a href="#">Tag name</a>, <a href="#">Tag</a></div>
-  </div>
-</div>
-<div class="grid">
-  <div class="preview">
-    <a href="video-play.html" title=""><img src="../../assets/images/img.jpg" alt="#"></a>
-    <div class="time">00.00</div>
-  </div>
-  <div class="data">
-    <h3><a href="video-play.html">Lorem Ipsum Dolor Sit amet</a></h3>
-    <div class="category"><span class="icon"></span> <a href="#">Tag name</a>, <a href="#">Tag</a></div>
-  </div>
-</div>
+
+
 <div class="clearFloat"></div>
