@@ -7,7 +7,7 @@ import {HttpClient} from '@angular/common/http';
   styleUrls: ['./playlist-dashcam.component.css']
 })
 export class PlaylistDashcamComponent implements OnInit {
-  DashPlaylist = 'https://www.googleapis.com/youtube/v3/playlistItems?part=snippet&playlistId=PLBUVxR39HccS981ldrS5GmYBQJp_JZX0y&key=AIzaSyCsg8LgJPvx5Fc7BONQdaKxVttI5KZf4jM';
+  DashPlaylist = 'https://www.googleapis.com/youtube/v3/playlistItems?part=snippet&playlistId=PLBUVxR39HccS981ldrS5GmYBQJp_JZX0y&key=AIzaSyDiUBdYn5gMQeJV97eAZ8vexbBIJ_5__oM';
   Dash: Object;
   isLoading = false;
 

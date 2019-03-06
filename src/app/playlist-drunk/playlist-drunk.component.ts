@@ -7,7 +7,7 @@ import {HttpClient} from '@angular/common/http';
   styleUrls: ['./playlist-drunk.component.css']
 })
 export class PlaylistDrunkComponent implements OnInit {
-  DrunkPlaylist = 'https://www.googleapis.com/youtube/v3/playlistItems?part=snippet&playlistId=PLBUVxR39HccQ9Rghf9us7N3m8LpdShaod&key=AIzaSyCsg8LgJPvx5Fc7BONQdaKxVttI5KZf4jM';
+  DrunkPlaylist = 'https://www.googleapis.com/youtube/v3/playlistItems?part=snippet&playlistId=PLBUVxR39HccQ9Rghf9us7N3m8LpdShaod&key=AIzaSyDiUBdYn5gMQeJV97eAZ8vexbBIJ_5__oM';
   Drunk: Object;
   isLoading = false;
 

@@ -1,5 +1,6 @@
 <div class="txt-center margin-top-18">
   <a href="#"><img src="../../assets/images/ad_728x90.png" alt=""></a>
-  <p><a href="">Connexion</a></p>
+  <button *ngIf="!userAuthData" (click)="oauthSignIn()">Connexion</button>
+  <p (click)="oauthSignOut()" *ngIf="userAuthData">{{userAuthData.full_name}}</p>
 </div>
 <div class="clearFloat"></div>

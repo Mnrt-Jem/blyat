@@ -7,7 +7,7 @@
   <app-header></app-header>
   <!-- Header End -->
   <div class="flex"><input id="yt" type="submit" class="yt-button" value="Ajouter a la playlist" (click)="highlightItem($event)"></div>
-  <div class="part">
+    <div class="part">
     <div class="search-box">
         <input #search type="text" (keyup.enter)="getVideo(search.value)">
         <input type="submit" value="" (click)="getVideo(search.value)">
@@ -18,8 +18,8 @@
       <div class="preview inline-flex">
         <iframe width="128" height="90" [src]="'https://www.youtube.com/embed/'+link.id.videoId | safe" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
         </iframe>
-        <h3><a href="video-play.html">{{link.snippet.title}}</a></h3>
-        <div class="flex"><input id="yt" type="submit" class="yt-button" value="Ajouter a la playlist" (click)="highlightItem($event)"></div>
+        <h3>{{link.snippet.title}}</h3>
+        <div class="flex"><input id="yt" type="submit" class="yt-button" value="Ajouter a la playlist" (click)="highlightItem(link.id.videoId, idDash)"></div>
 
       </div>
     </div>
@@ -30,27 +30,27 @@
         <iframe width="128" height="90" [src]="'https://www.youtube.com/embed/'+link2.id.videoId | safe" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
         </iframe>
       <h3><a href="video-play.html">{{link2.snippet.title}}</a></h3>
-        <div class="flex"><input id="yt" type="submit" class="yt-button" value="Ajouter a la playlist" (click)="highlightItem($event)"></div>
+        <div class="flex"><input id="yt" type="submit" class="yt-button" value="Ajouter a la playlist" (click)="highlightItem2(link2.id.videoId, idDrunk)"></div>
       </div>
     </div>
     <div class="clearFloat"></div>
-    <h2>Playlist Crash</h2>
+    <h2>Catégorie Crash</h2>
     <div class="grid" *ngFor="let link3 of searchedVideosCrash; let i = index">
       <div class="preview inline-flex">
         <iframe width="128" height="90" [src]="'https://www.youtube.com/embed/'+link3.id.videoId | safe" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
         </iframe>
         <h3><a href="video-play.html">{{link3.snippet.title}}</a></h3>
-        <div class="flex"><input id="yt" type="submit" class="yt-button" value="Ajouter a la playlist" (click)="highlightItem($event)"></div>
+        <div class="flex"><input id="yt" type="submit" class="yt-button" value="Ajouter a la playlist" (click)="highlightItem3(link3.id.videoId, idCrash)"></div>
       </div>
     </div>
     <div class="clearFloat"></div>
-    <h2>Playlist Fail</h2>
+    <h2>Catégorie Fail</h2>
     <div class="grid" *ngFor="let link4 of searchedVideosFail; let i = index">
       <div class="preview inline-flex">
         <iframe width="128" height="90" [src]="'https://www.youtube.com/embed/'+link4.id.videoId | safe" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
         </iframe>
         <h3><a href="video-play.html">{{link4.snippet.title}}</a></h3>
-        <div class="flex"><input id="yt" type="submit" class="yt-button" value="Ajouter a la playlist" (click)="highlightItem($event)"></div>
+        <div class="flex"><input id="yt" type="submit" class="yt-button" value="Ajouter a la playlist" (click)="highlightItem4(link4.id.videoId, idFail)"></div>
       </div>
     </div>
     <div class="clearFloat"></div>
