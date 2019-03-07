@@ -132,6 +132,8 @@ Style
     float:left;
     width: 84%;
     min-height: 1000px;
+    margin-top: 65px;
+    margin-left: 245px;
 }
 .part h2,
 .part h1{

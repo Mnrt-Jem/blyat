@@ -4,10 +4,10 @@
 <app-sidebar></app-sidebar>
 <div class="content">
   <div class="part">
-      <iframe width="97%" height="400" [src]="'https://www.youtube.com/embed/'+videoid | safe" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      <iframe width="97%" height="550" [src]="'https://www.youtube.com/embed/'+videoid | safe" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     <form id="form" #form>
       <label for="inp" class="inp">
-        <input type="text" id="inp" #comment name="comment" placeholder="Ajouter un commentaire public...">
+        <input type="text" id="inp" #comment name="comment" (keyup.enter)="addCommentaireToVideo(comment.value, form)" placeholder="Ajouter un commentaire public...">
         <span class="border"></span>
       </label>
       <div class="flex">
@@ -29,10 +29,11 @@
   </div>
 
   <!-- Footer start -->
-  <app-footer></app-footer>
+
   <!-- footer end -->
 
 </div>
 
 <div class="clearFloat"></div>
 
+<app-footer></app-footer>
