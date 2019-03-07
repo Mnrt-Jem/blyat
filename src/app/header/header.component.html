@@ -1,10 +1,11 @@
 <div class="header">
   <div class="left">
-    <a href="#"><img src="../../assets/images/logo.png" alt=""></a>
+    <a href="/blyat"><img src="../../assets/images/logo.png" alt=""></a>
     <h2>BlyatTV</h2>
   </div>
   <div class="right">
-    <a href=""><img src="../../assets/images/profile_pic_placeholder.png"></a>
+    <p (click)="oauthSignOut()" *ngIf="userAuthData">{{userAuthData.full_name}}</p>
+    <img *ngIf="!userAuthData" (click)="oauthSignIn()" src="../../assets/images/profile_pic_placeholder.png">
   </div>
 </div>
 <div class="clearFloat"></div>
