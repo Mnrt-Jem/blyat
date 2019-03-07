@@ -7,7 +7,7 @@ import {HttpClient} from '@angular/common/http';
   styleUrls: ['./playlist-fail.component.css']
 })
 export class PlaylistFailComponent implements OnInit {
-  FailPlaylist = 'https://www.googleapis.com/youtube/v3/playlistItems?part=snippet&playlistId=PLBUVxR39HccQlAEfI4F2zRL0osYRiHzc4&key=AIzaSyCsg8LgJPvx5Fc7BONQdaKxVttI5KZf4jM';
+  FailPlaylist = 'https://www.googleapis.com/youtube/v3/playlistItems?part=snippet&playlistId=PLBUVxR39HccQlAEfI4F2zRL0osYRiHzc4&key=AIzaSyDiUBdYn5gMQeJV97eAZ8vexbBIJ_5__oM';
   Fail: Object;
   isLoading = false;
 

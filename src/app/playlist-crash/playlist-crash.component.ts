@@ -10,7 +10,7 @@ import {HttpClient} from '@angular/common/Http';
 })
 
 export class PlaylistCrashComponent implements OnInit {
-  CrashPlaylist = 'https://www.googleapis.com/youtube/v3/playlistItems?part=snippet&playlistId=PLBUVxR39HccRTNPCyQgWTW_GoOEu7_9_h&key=AIzaSyCsg8LgJPvx5Fc7BONQdaKxVttI5KZf4jM';
+  CrashPlaylist = 'https://www.googleapis.com/youtube/v3/playlistItems?part=snippet&playlistId=PLBUVxR39HccRTNPCyQgWTW_GoOEu7_9_h&key=AIzaSyDiUBdYn5gMQeJV97eAZ8vexbBIJ_5__oM';
   Crash: Object;
   isLoading = false;
 
