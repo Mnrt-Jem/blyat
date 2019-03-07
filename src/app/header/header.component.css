@@ -4,6 +4,8 @@
     background: #272727;
     display: flex;
     justify-content: space-between;
+    position: fixed;
+    z-index: 2;
 }
 
 .header img
@@ -37,4 +39,11 @@
     width: auto;
     height: 2.5rem;
     margin-right: 1.5rem;
+}
+.inline-flex {
+    display: inline-flex;
+}
+p {
+    color: white;
+    font-size: large;
 }

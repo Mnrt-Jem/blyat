@@ -16,16 +16,18 @@
                     <i class="fas fa-home fa-lg sidebar-icon active"></i>Accueil
                 </a>
             </li>
+            <div *ngIf="userAuthData">
             <li class="sidebar-elem">
-                <a routerLink="/dash" routerLinkActive="active">
+                <a routerLink="/blyat-admin" routerLinkActive="active">
                     <i class="fas fa-toolbox fa-lg sidebar-icon"></i>Administrer Playlist
                 </a>
             </li>
             <li class="sidebar-elem-last">
-                <a routerLink="/drunk" routerLinkActive="active">
+                <a routerLink="/blyat-mananer" routerLinkActive="active">
                     <i class="fas fa-screwdriver fa-lg sidebar-icon"></i>Modifier Playlist
                 </a>
             </li>
+            </div>
         </ul>
     </div>
     <div class="widget">

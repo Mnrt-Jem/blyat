@@ -14,3 +14,7 @@ a{text-decoration:none;}
 /*
 Style
 */
+html {
+    background-color: #1c1c1c;
+    overflow-x: hidden;
+}

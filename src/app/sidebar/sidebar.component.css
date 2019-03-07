@@ -9,6 +9,9 @@ Style
     background: #1c1c1c;
     float:left;
     padding:0;
+    position: fixed;
+    z-index: 1;
+    margin-top: 65px;
 }
 
 .sidebar-icon

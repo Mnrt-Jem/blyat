@@ -1,9 +1,8 @@
 <h2>Playlist Crash</h2>
-
-
-<div class="grid" *ngFor="let link of Crash.items; let i = index">
+<div class="grid">
+  <div class="video" *ngFor="let link of Crash.items; let i = index">
   <div class="preview">
-    <iframe width="128" height="90" [src]="'https://www.youtube.com/embed/'+link.snippet.resourceId.videoId | safe" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+    <iframe width="210" height="118" [src]="'https://www.youtube.com/embed/'+link.snippet.resourceId.videoId | safe" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
     </iframe>
 
   </div>
@@ -12,6 +11,6 @@
     <!--<div class="category"><span class="icon"></span> <a href="#">Tag name</a>, <a href="#">Tag</a></div>-->
   </div>
 </div>
-
+</div>
 
 <div class="clearFloat"></div>

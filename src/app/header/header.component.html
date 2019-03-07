@@ -4,7 +4,10 @@
     <h2>BlyatTV</h2>
   </div>
   <div class="right">
-    <p (click)="oauthSignOut()" *ngIf="userAuthData">{{userAuthData.full_name}}</p>
+    <div (click)="oauthSignOut()" *ngIf="userAuthData" class="inline-flex">
+      <p>{{userAuthData.full_name}}</p>
+      <img src="../../assets/images/logo.png">
+    </div>
     <img *ngIf="!userAuthData" (click)="oauthSignIn()" src="../../assets/images/profile_pic_placeholder.png">
   </div>
 </div>
