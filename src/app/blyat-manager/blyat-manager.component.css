@@ -12,6 +12,7 @@ Style
     margin-left: 245px;
 
 }
+
 .part h2,
 .part h1{
     font-weight:bold;
@@ -25,5 +26,5 @@ Style
     color:#2d2d2d;
 }
 .part{
-
+    margin: 1.5rem 2rem 0 2rem;
 }
