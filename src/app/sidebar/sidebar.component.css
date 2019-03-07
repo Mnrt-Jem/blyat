@@ -1,0 +1,285 @@
+/*
+Style
+*/
+
+/* sidebar */
+.sidebar{
+    width:16%;
+    height: 100%;
+    background: #1c1c1c;
+    float:left;
+    padding:0;
+}
+
+.sidebar-icon
+{
+    margin: 0 1rem 0 1rem;
+}
+
+.sidebar-icon
+{
+    color: white;
+}
+
+.sidebar-elem a
+{
+    height: 3rem;
+    display: flex;
+    align-items: center;
+    color: white;
+}
+
+.sidebar-elem-last a
+{
+    height: 3rem;
+    display: flex;
+    align-items: center;
+    color: white;
+    margin-bottom: 1rem;
+}
+
+.menu-link
+{
+    display: inline;
+    font-size: 2rem;
+}
+
+.widget{
+    font-size:1rem;
+    margin: 1rem 0 18px 0;
+    background: #1c1c1c;
+    overflow:hidden;
+}
+
+.widget h3
+{
+    /*margin: 0 0 1rem 1rem;*/
+    color: #707070;
+}
+
+.widget ul{
+    list-style:none;
+    margin:0;
+    padding:0;
+}
+.widget li{
+    margin:0;
+    padding:0;
+}
+.widget li.active a:before{
+    content:"";
+    position:absolute;
+    top:13px;
+    left:0px;
+    z-index:2;
+    width:8px;
+    height:8px;
+}
+.widget li:last-child{
+    border-bottom:1px solid #2d2d2d;
+}
+.widget li:first-child{
+    /*border-top:1px solid #2d2d2d;*/
+}
+.widget a{
+    position:relative;
+    line-height:1.6em;
+}
+.widget a:hover,
+.widget li.active a{
+    background: #4b4b4b;
+}
+
+.playlist-menu
+{
+    margin-top: 0.25rem;
+    margin-bottom: 0.25rem;
+    padding-left: 2rem;
+}
+
+.playlist-menu-title
+{
+    display: flex;
+    margin-left: 1rem;
+    color: white;
+    margin-bottom: 0.5rem;
+    margin-top: 0.5rem;
+
+}
+
+.playlist-menu-title i
+{
+    color: white;
+    margin-right: 1rem;
+}
+
+.playlist-menu-first
+{
+    margin-bottom: 0.25rem;
+    padding-left: 2rem;
+}
+
+.playlist-menu-last
+{
+    margin-top: 0.25rem;
+    margin-bottom: 2rem;
+    padding-left: 2rem;
+}
+
+.playlist-menu-item
+{
+    margin-left: 2rem;
+}
+
+/*.search-box{
+    background:#fff;
+    border:1px solid #ddd;
+    -moz-border-radius:2em;
+    -webkit-border-radius:2em;
+    border-radius:2em;
+    margin:0 0 18px 0;
+}
+.search-box:hover{
+    background:#fff;
+}
+.search-box input[type=text]{
+    background:none;
+    width:160px;
+    outline:none;
+    border:none;
+    padding:10px 5px;
+    margin-left:12px;
+    color:#7d7d7d;
+}
+.search-box input[type=submit]{
+    display:inline-block;
+    margin-right:12px;
+    width:16px;
+    height:16px;
+    cursor:pointer;
+    background:url(../../assets/images/search.png) no-repeat;
+    border:none;
+    outline:none;
+    position:relative;
+    top:1px;
+    left:4px;
+}*/
+
+
+/*.part{
+    padding:20px 0 0 20px;
+}*/
+/*.grid{
+    width:128px;
+    padding:0 20px 20px 0;
+    float:left;
+}*/
+/*.grid h3{
+    color:#464646;
+    line-height:1.6em;
+    font-size:12px;
+
+    overflow:hidden;
+    margin:5px 0;
+}*/
+/*.grid h3 a{
+    color:#0d6e9b;
+}
+.grid .preview{
+    position:relative;
+}
+.grid .preview img{
+    width:128px;
+    max-width:100%;
+    display:block;
+}
+.grid .time{
+    position:absolute;
+    bottom:0;
+    right:0;
+    font-size:8px;
+    letter-spacing:1px;
+    color:#fff;
+    padding:2px;
+    background-color:rgba(0,0,0,.6);
+    -moz-border-top-left-radius:.5em;
+    -webkit-border-top-left-radius:.5em;
+    border-top-left-radius:.5em;
+}
+.grid .data div{
+    padding:5px 0 0 0;
+}
+.grid .data div a{
+    color:#6f6f6f;
+}
+.grid .data div a:hover{
+    text-decoration:underline;
+    color:#464646;
+}
+.icon{
+    background:url(../../assets/images/icons.png) no-repeat 0 0;
+}
+.go,
+.icon{
+    display:inline-block;
+    width:18px;
+    height:18px;
+    padding-right:5px;
+    position:relative;
+}
+.go{
+    background:url(../../assets/images/go.png) no-repeat;
+    top:3px;
+}
+.fb{
+    background-position:0 -60px;
+    top:5px;
+}
+.comments{
+    background-position:0 -124px;
+    top:8px;
+}
+.views{
+    background-position:0 -143px;
+    top:8px;
+}
+.twitter{
+    background-position:0 -40px;
+    top:5px;
+}
+.stumble{
+    background-position:0 -82px;
+    top:5px;
+}
+.like{
+    background-position:0 -103px;
+    top:4px;
+}
+.category span{
+    display:inline-block;
+    background-position:0 -22px;
+    padding:0 5px 0 0;
+    position:relative;
+    vertical-align:middle;
+}*/
+
+/*.menu{
+    position:absolute;
+    bottom:0;
+    right:0;
+    background:#2d2d2d;
+}
+.menu li{
+    display:inline-block;
+    float:left;
+}
+.menu a{
+    display:block;
+    padding:10px 20px;
+    color:#5d5d5d;
+    font-weight:bold;
+}
+.menu a:hover{
+    background:#fff;
+    color:#00a99d;
+}*/

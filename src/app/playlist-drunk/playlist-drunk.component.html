@@ -1,0 +1,14 @@
+
+  <h2>Playlist Drunk</h2>
+  <div class="grid" *ngFor="let link of Drunk.items; let i = index">
+    <div class="preview">
+      <iframe width="128" height="90" [src]="'https://www.youtube.com/embed/'+link.snippet.resourceId.videoId | safe" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+      </iframe>
+
+    </div>
+    <div class="data">
+      <h3><a href="video-play.html">{{link.snippet.title}}</a></h3>
+      <!--<div class="category"><span class="icon"></span> <a href="#">Tag name</a>, <a href="#">Tag</a></div>-->
+    </div>
+  </div>
+  <div class="clearFloat"></div>

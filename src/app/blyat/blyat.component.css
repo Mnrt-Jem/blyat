@@ -1,0 +1,26 @@
+
+/*
+Style
+*/
+
+.content{
+    background: #121212;
+    color:#fff;
+    float:left;
+    width: 84%;
+}
+.part h2,
+.part h1{
+    font-weight:bold;
+    font-size:16px;
+    border-bottom:1px solid #2d2d2d;
+}
+.part h2,
+.part h2 a,
+.part h1,
+.part h1 a{
+    color:#2d2d2d;
+}
+.part{
+
+}

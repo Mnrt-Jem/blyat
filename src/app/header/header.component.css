@@ -1,0 +1,40 @@
+.header
+{
+    width: 100%;
+    background: #272727;
+    display: flex;
+    justify-content: space-between;
+}
+
+.header img
+{
+    width: auto;
+    height: 3rem;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.left
+{
+    display: flex;
+    align-items: center;
+}
+
+.left h2
+{
+    color: white;
+}
+
+.right
+{
+    display: flex;
+    align-items: center;
+}
+
+.right img
+{
+    border-radius: 50%;
+    width: auto;
+    height: 2.5rem;
+    margin-right: 1.5rem;
+}

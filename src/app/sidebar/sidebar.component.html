@@ -1,0 +1,52 @@
+<div class="sidebar">
+    <header>
+        <div class="clearFloat"></div>
+        <!--<div class="search-box">
+          <form>
+            <input type="text">
+            <input type="submit" value="">
+          </form>
+        </div>-->
+        <div class="clearFloat"></div>
+    </header>
+    <div class="widget">
+        <ul>
+            <li class="sidebar-elem active">
+                <a routerLink="/blyat" routerLinkActive="active">
+                    <i class="fas fa-home fa-lg sidebar-icon active"></i>Accueil
+                </a>
+            </li>
+            <li class="sidebar-elem">
+                <a routerLink="/dash" routerLinkActive="active">
+                    <i class="fas fa-toolbox fa-lg sidebar-icon"></i>Administrer Playlist
+                </a>
+            </li>
+            <li class="sidebar-elem-last">
+                <a routerLink="/drunk" routerLinkActive="active">
+                    <i class="fas fa-screwdriver fa-lg sidebar-icon"></i>Modifier Playlist
+                </a>
+            </li>
+        </ul>
+    </div>
+    <div class="widget">
+        <div class="playlist-menu-title">
+            <i class="fas fa-folder fa-lg"></i>Playlists
+        </div>
+        <ul>
+            <li class="playlist-menu-item">
+                <a routerLink="/dash" routerLinkActive="active" class="playlist-menu-first">Dashcam</a>
+            </li>
+            <li>
+                <a routerLink="/drunk" routerLinkActive="active" class="playlist-menu">Drunk</a>
+            </li>
+            <li>
+                <a routerLink="/drunk" routerLinkActive="active" class="playlist-menu">Crash</a>
+            </li>
+            <li>
+                <a routerLink="/drunk" routerLinkActive="active" class="playlist-menu-last">Fail</a>
+            </li>
+        </ul>
+    </div>
+    <div class="clearFloat"></div>
+</div>
+

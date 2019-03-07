@@ -1,0 +1,40 @@
+
+<app-sidebar></app-sidebar>
+<div class="content">
+
+  <!-- Header start -->
+  <app-header></app-header>
+  <!-- Header End -->
+  <div class="part">
+      <iframe width="97%" height="400" [src]="'https://www.youtube.com/embed/'+videoid | safe" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <form id="form" #form>
+      <label for="inp" class="inp">
+        <input type="text" id="inp" #comment name="comment" placeholder="Ajouter un commentaire public...">
+        <span class="border"></span>
+      </label>
+      <div class="flex">
+        <input type="submit" class="yt-button" (click)="addCommentaireToVideo(comment.value, form)" value="AJOUTER UN COMMENTAIRE">
+      </div>
+
+    </form>
+      <div *ngFor="let link of vid.items; let i = index">
+        <div class="inline-flex">
+          <div class="img-flex">
+            <img width="50px" height="50px" [src]="link.snippet.topLevelComment.snippet.authorProfileImageUrl" />
+          </div>
+          <div class="comment-flex">
+            <p class="bold">{{link.snippet.topLevelComment.snippet.authorDisplayName}}</p>
+            <p>{{link.snippet.topLevelComment.snippet.textOriginal}}</p>
+          </div>
+        </div>
+      </div>
+  </div>
+
+  <!-- Footer start -->
+  <app-footer></app-footer>
+  <!-- footer end -->
+
+</div>
+
+<div class="clearFloat"></div>
+
