@@ -11,19 +11,19 @@
     </header>
     <div class="widget">
         <ul>
-            <li class="sidebar-elem active">
-                <a routerLink="/blyat" routerLinkActive="active">
+            <li class="sidebar-elem ">
+                <a routerLink="/blyat" routerLinkActive="active" class="nav-item">
                     <i class="fas fa-home fa-lg sidebar-icon active"></i>Accueil
                 </a>
             </li>
             <div *ngIf="userAuthData">
             <li class="sidebar-elem">
-                <a routerLink="/blyat-admin" routerLinkActive="active">
+                <a routerLink="/blyat-admin" routerLinkActive="active" class="nav-item">
                     <i class="fas fa-toolbox fa-lg sidebar-icon"></i>Administrer Playlist
                 </a>
             </li>
             <li class="sidebar-elem-last">
-                <a routerLink="/blyat-manager" routerLinkActive="active">
+                <a routerLink="/blyat-manager" routerLinkActive="active" class="nav-item">
                     <i class="fas fa-screwdriver fa-lg sidebar-icon"></i>Modifier Playlist
                 </a>
             </li>
@@ -31,21 +31,26 @@
         </ul>
     </div>
     <div class="widget">
-        <div class="playlist-menu-title">
-            <i class="fas fa-folder fa-lg"></i>Playlists
-        </div>
         <ul>
-            <li class="playlist-menu-item">
-                <a routerLink="/dash" routerLinkActive="active" class="playlist-menu-first">Dashcam</a>
+            <li class="sidebar-elem">
+                <a routerLink="/dash" routerLinkActive="active" class="nav-item">
+                    <i class="fas fa-video fa-lg sidebar-icon"></i>Dashcam
+                </a>
             </li>
-            <li>
-                <a routerLink="/drunk" routerLinkActive="active" class="playlist-menu">Drunk</a>
+            <li class="sidebar-elem">
+                <a routerLink="/drunk" routerLinkActive="active" class="nav-item">
+                    <i class="fas fa-wine-bottle fa-lg sidebar-icon"></i>Drunk
+                </a>
             </li>
-            <li>
-                <a routerLink="/drunk" routerLinkActive="active" class="playlist-menu">Crash</a>
+            <li class="sidebar-elem">
+                <a routerLink="/crash" routerLinkActive="active" class="nav-item">
+                    <i class="fas fa-car-crash fa-lg sidebar-icon"></i>Crash
+                </a>
             </li>
-            <li>
-                <a routerLink="/drunk" routerLinkActive="active" class="playlist-menu-last">Fail</a>
+            <li class="sidebar-elem-last">
+                <a routerLink="/fail" routerLinkActive="active" class="nav-item">
+                    <i class="fas fa-exclamation-triangle fa-lg sidebar-icon"></i>Fail
+                </a>
             </li>
         </ul>
     </div>

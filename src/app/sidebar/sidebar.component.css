@@ -4,7 +4,7 @@ Style
 
 /* sidebar */
 .sidebar{
-    width:16%;
+    width:18%;
     height: 100%;
     background: #1c1c1c;
     float:left;
@@ -12,6 +12,15 @@ Style
     position: fixed;
     z-index: 1;
     margin-top: 65px;
+}
+
+.sidebar-elem
+{
+
+}
+
+.widget a:hover > .sidebar-icon{
+    color: red;
 }
 
 .sidebar-icon
@@ -69,7 +78,7 @@ Style
     margin:0;
     padding:0;
 }
-.widget li.active a:before{
+.widget li.active .nav-item:before{
     content:"";
     position:absolute;
     top:13px;
@@ -84,55 +93,16 @@ Style
 .widget li:first-child{
     /*border-top:1px solid #2d2d2d;*/
 }
-.widget a{
+.widget .nav-item{
     position:relative;
     line-height:1.6em;
 }
-.widget a:hover,
-.widget li.active a{
+.widget .nav-item:hover,
+.widget li.active .nav-item{
     background: #4b4b4b;
 }
 
-.playlist-menu
-{
-    margin-top: 0.25rem;
-    margin-bottom: 0.25rem;
-    padding-left: 2rem;
-}
 
-.playlist-menu-title
-{
-    display: flex;
-    margin-left: 1rem;
-    color: white;
-    margin-bottom: 0.5rem;
-    margin-top: 0.5rem;
-
-}
-
-.playlist-menu-title i
-{
-    color: white;
-    margin-right: 1rem;
-}
-
-.playlist-menu-first
-{
-    margin-bottom: 0.25rem;
-    padding-left: 2rem;
-}
-
-.playlist-menu-last
-{
-    margin-top: 0.25rem;
-    margin-bottom: 2rem;
-    padding-left: 2rem;
-}
-
-.playlist-menu-item
-{
-    margin-left: 2rem;
-}
 
 /*.search-box{
     background:#fff;
