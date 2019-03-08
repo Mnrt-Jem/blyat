@@ -7,7 +7,7 @@
       <iframe width="97%" height="550" [src]="'https://www.youtube.com/embed/'+videoid | safe" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     <form id="form" #form>
       <label for="inp" class="inp">
-        <input type="text" id="inp" #comment name="comment" (keyup.enter)="addCommentaireToVideo(comment.value, form)" placeholder="Ajouter un commentaire public...">
+        <input type="text" id="inp" #comment name="comment" placeholder="Ajouter un commentaire public...">
         <span class="border"></span>
       </label>
       <div class="flex">

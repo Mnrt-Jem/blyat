@@ -1,16 +1,18 @@
 <div>
-  <input type="text" value="Fail" #rename name="rename" (keyup.enter)="editPlaylistName(rename.value)"/>
+  <input type="text" class="input" value="Fail" #rename name="rename" (keyup.enter)="editPlaylistName(rename.value)"/>
 </div>
 
-<div class="grid" *ngFor="let link of Fail.items; let i = index">
+<div class="grid">
+  <div class="video" *ngFor="let link of Fail.items; let i = index">
   <div class="preview">
-    <img width="128" height="90" [src]="link.snippet.thumbnails.default.url"/>
-    <input id="yt" type="submit" name="delete" class="yt-button" (click)="deleteVideo(link.id)">
+    <img width="210" height="118" [src]="link.snippet.thumbnails.default.url"/>
+    <span class="delete" (click)="deleteVideo(link.id)"><i class="fas fa-trash-alt"></i></span>
 
   </div>
   <div class="data">
     <h3>{{link.snippet.title}}</h3>
     <!--<div class="category"><span class="icon"></span> <a href="#">Tag name</a>, <a href="#">Tag</a></div>-->
   </div>
+</div>
 </div>
 <div class="clearFloat"></div>
