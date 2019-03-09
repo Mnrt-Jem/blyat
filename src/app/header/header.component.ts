@@ -37,6 +37,7 @@ export class HeaderComponent implements OnInit {
     };
     this.userAuthData = storageData;
     this.googleAuthStorage.setAuthenticationData(storageData);
+    this.ngOnInit();
   }
   handleSignInAborted(err) {
     console.log(err); // TODO:: Display error message to user
@@ -44,5 +45,6 @@ export class HeaderComponent implements OnInit {
   oauthSignOut() {
     this.authService.signOut();
     this.googleAuthStorage.resetAuthenticationData();
+    this.ngOnInit();
   }
 }

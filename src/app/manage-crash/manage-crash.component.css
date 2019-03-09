@@ -19,21 +19,46 @@ h3 {
     padding: 12px 0;
     font-size: 16px;
     font-weight: 500;
-    border-bottom: 2px solid #c8ccd4;
+    border-bottom: 2px solid #2d2d2d;
     background: none;
     border-radius: 0;
     color: white;
-    transition: all 0.15s ease;
+    transition: all 0.5s ease;
     margin-bottom: 1rem;
+}
+.input:focus {
+    border-bottom: 2px solid white;
 }
 .fa-trash-alt {
     color: #FF0000;
-    font-size: 25px;
+    font-size: 20px;
     cursor: pointer;
+    transition: all 0.5s ease;
 }
+
 
 .delete {
     position: absolute;
-    margin-left: -30px;
+    margin-left: -50px;
+    padding: 10px;
     margin-top: 5px;
+    border: 1px solid white;
+    border-radius: 50%;
+    background-color: white;
+    transition: all 0.5s ease;
+}
+
+.delete:hover {
+    position: absolute;
+    margin-left: -50px;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid white;
+    border-radius: 50%;
+    background-color: #FF0000;
+}
+.delete:hover .fa-trash-alt {
+    color: white;
+    font-size: 25px;
+    cursor: pointer;
 }

@@ -2,11 +2,14 @@ import { Component, OnInit } from '@angular/core';
 import {HttpClient} from '@angular/common/http';
 import {subscribeOn} from 'rxjs/operators';
 import {VideoToPlaylistService} from '../service/videotoplaylist.service';
+import {MessageService} from '../../assets/primeng/api';
+
 
 @Component({
   selector: 'app-admin',
   templateUrl: './admin.component.html',
-  styleUrls: ['./admin.component.css']
+  styleUrls: ['./admin.component.css'],
+    providers: [MessageService]
 })
 export class AdminComponent implements OnInit {
   searchedVideosDash = '';
@@ -19,7 +22,7 @@ export class AdminComponent implements OnInit {
   idDrunk = 'PLBUVxR39HccQ9Rghf9us7N3m8LpdShaod';
   idFail = 'PLBUVxR39HccQlAEfI4F2zRL0osYRiHzc4';
   youtubeUrl = 'https://www.googleapis.com/youtube/v3/playlistItems?part=snippet&key=AIzaSyDiUBdYn5gMQeJV97eAZ8vexbBIJ_5__oM';
-  constructor(private https: HttpClient, private youtubevideo: VideoToPlaylistService) { }
+  constructor(private https: HttpClient, private youtubevideo: VideoToPlaylistService, private messageService: MessageService) { }
 
   ngOnInit() {
   }
@@ -57,37 +60,29 @@ export class AdminComponent implements OnInit {
 
 
       this.youtubevideo.addToPlaylist(videoId, idDash);
-    const yt = document.getElementById('yt');
-    yt.className += ' yt-active';
-    const success = document.getElementById('success');
-    success.className += ' active';
+      this.messageService.add({severity:'success', summary:'Success', detail:'La vidéo a été ajouté à la playlist'});
+
   }
     highlightItem2(videoId: string, idDrunk: string) {
 
 
         this.youtubevideo.addToPlaylist(videoId, idDrunk);
-        const yt = document.getElementById('yt');
-        yt.className += ' yt-active';
-        const success = document.getElementById('success');
-        success.className += ' active';
+        this.messageService.add({severity:'success', summary:'Success', detail:'La vidéo a été ajouté à la playlist'});
+
     }
     highlightItem3(videoId: string, idCrash: string) {
 
 
         this.youtubevideo.addToPlaylist(videoId, idCrash);
-        const yt = document.getElementById('yt');
-        yt.className += ' yt-active';
-        const success = document.getElementById('success');
-        success.className += ' active';
+        this.messageService.add({severity:'success', summary:'Success', detail:'La vidéo a été ajouté à la playlist'});
+
     }
     highlightItem4(videoId: string, idFail: string) {
 
 
         this.youtubevideo.addToPlaylist(videoId, idFail);
-        const yt = document.getElementById('yt');
-        yt.className += ' yt-active';
-        const success = document.getElementById('success');
-        success.className += ' active';
+        this.messageService.add({severity:'success', summary:'Success', detail:'La vidéo a été ajouté à la playlist'});
+
     }
 
 

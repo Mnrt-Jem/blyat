@@ -30,11 +30,7 @@ export class CommentaireService {
             resolve(res);
           },
           err => {
-            reject(err);
-            console.log(videoId);
-            console.log(commentText);
-            console.log(this.httpClient);
-            alert(commentText);
+            alert('Nous avons rencontré un problème.. réessayer!');
           });
     });
   }

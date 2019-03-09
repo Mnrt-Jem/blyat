@@ -9,6 +9,7 @@
     margin-left: 245px;
     padding-left: 50px;
     padding-top: 1%;
+    min-height: 450px;
 }
 .part h2,
 .part h1{
@@ -70,11 +71,11 @@ p {
     height: 48px;
     font-size: 16px;
     font-weight: 500;
-    border-bottom: 2px solid #c8ccd4;
+    border-bottom: 2px solid #2d2d2d;
     background: none;
     border-radius: 0;
     color: white;
-    transition: all 0.15s ease;
+    transition: all 0.5s ease;
 }
 .inp input:focus {
     border-bottom: 2px solid white;
@@ -85,6 +86,7 @@ p {
     margin-top: 5px;
 }
 .yt-button {
+    transition: all 0.5s ease;
     color: black;
     background-color: #606060;
     display: inline-flex;
@@ -117,6 +119,10 @@ p {
     letter-spacing: .007px;
     border: 0;
     float:right;
+}
+.yt-button:hover {
+    color: white;
+    background-color: #FF0000;
 }
 .wrap{
     width:1000px;

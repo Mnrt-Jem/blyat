@@ -12,3 +12,11 @@ a {
 .video {
     margin: 2px;
 }
+h2 {
+    color: white;
+}
+
+.clearFloat {
+    border-bottom: 1px solid #ffffff1a;
+    width: 80%;
+}

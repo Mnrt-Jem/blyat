@@ -3,15 +3,17 @@ import { ActivatedRoute } from '@angular/router';
 import {HttpClient} from '@angular/common/http';
 import {CommentaireService} from '../service/commentaire.service';
 import {NgForm} from '@angular/forms';
+import {MessageService} from '../../assets/primeng/api';
 
 @Component({
   selector: 'app-blyat-video',
   templateUrl: './blyat-video.component.html',
-  styleUrls: ['./blyat-video.component.css']
+  styleUrls: ['./blyat-video.component.css'],
+    providers: [MessageService]
 })
 export class BlyatVideoComponent implements OnInit {
 
-  constructor(private Activatedroute: ActivatedRoute, private Http: HttpClient, private commentaire: CommentaireService) {
+  constructor(private Activatedroute: ActivatedRoute, private Http: HttpClient, private commentaire: CommentaireService, private messageService: MessageService) {
   }
 
   public id = '';
@@ -36,6 +38,7 @@ export class BlyatVideoComponent implements OnInit {
   }
 
   addCommentaireToVideo(commentText: string, commentForm: NgForm) {
+      this.messageService.add({severity:'success', summary:'Success', detail:'Le commentaire a bien été ajouté'});
     this.commentaire.addCommentaire(this.videoid, commentText)
         .then(res => {
           commentForm.reset();

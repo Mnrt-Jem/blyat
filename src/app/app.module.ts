@@ -1,6 +1,5 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-
 import { AppComponent } from './app.component';
 import { SidebarComponent } from './sidebar/sidebar.component';
 import { HeaderComponent } from './header/header.component';
@@ -24,7 +23,8 @@ import { ManageCrashComponent } from './manage-crash/manage-crash.component';
 import { ManageDashcamComponent } from './manage-dashcam/manage-dashcam.component';
 import { ManageDrunkComponent } from './manage-drunk/manage-drunk.component';
 import { ManageFailComponent } from './manage-fail/manage-fail.component';
-
+import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
+import {ToastModule} from '../assets/primeng/toast';
 const appRoutes: Routes = [
   { path: 'blyat', component: BlyatComponent },
   { path: 'blyat-admin', component: AdminComponent },
@@ -76,6 +76,8 @@ export class SafePipe implements PipeTransform {
   imports: [
     BrowserModule,
     HttpClientModule,
+    BrowserAnimationsModule,
+    ToastModule,
     GoogleApiModule.forRoot({
       provide: NG_GAPI_CONFIG,
       useValue: gapiClientConfig

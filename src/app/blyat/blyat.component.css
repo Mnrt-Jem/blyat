@@ -12,6 +12,7 @@ Style
     margin-top: 65px;
     margin-left: 245px;
     padding-left: 100px;
+    min-height: 450px;
 }
 .part h2,
 .part h1{

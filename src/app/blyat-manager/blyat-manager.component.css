@@ -10,6 +10,7 @@ Style
     width: 84%;
     margin-top: 65px;
     margin-left: 245px;
+    min-height: 450px;
 
 }
 
@@ -26,5 +27,5 @@ Style
     color:#2d2d2d;
 }
 .part{
-    margin: 1.5rem 2rem 0 2rem;
+    margin: 1.5rem 2rem 0 6rem;
 }
