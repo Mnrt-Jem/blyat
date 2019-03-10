@@ -1,6 +1,7 @@
-# Blyat
+# Welcome to Blyat
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 6.2.2.
+This project was made during our scholarship with the purpose of getting started with Angular.
+The project works with the Youtube official API.
 
 ## Get started blyat
 
