@@ -63,7 +63,7 @@ Vous devrez ensuite exécuter les commandes "npm install" puis "npm update"
 
 ## Development blyat server
 
-Une fois cette étape achevée, tapez la commande "ng serveé et exécutez là.
+Une fois cette étape achevée, tapez la commande "ng serve" et exécutez là.
 Celle-ci lancera un server de développement où vous pourrez accéder à l'appli à l'adresse suivante : "http://localhost:4200/blyat"
 Il vous faudra vous connecter au compte pour que l'application fonctionne.
 Les logins sont :
