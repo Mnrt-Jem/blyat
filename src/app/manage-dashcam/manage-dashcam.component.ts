@@ -36,13 +36,13 @@ export class ManageDashcamComponent implements OnInit {
 
   }
   deleteVideo(videoId: string) {
-    this.youtubeDelete.deleteToPlaylist(videoId);
       this.messageService.add({severity:'success', summary:'Success', detail:'La vidéo a bien été supprimée'});
+    this.youtubeDelete.deleteToPlaylist(videoId);
     this.ngOnInit();
 
   }
   editPlaylistName(renameText: string) {
-      this.messageService.add({severity:'success', summary:'Success', detail:'Le nom de la playlist a bien été supprimée'});
+      this.messageService.add({severity:'success', summary:'Success', detail:'Le nom de la playlist a bien été modifiée'});
       this.youtubeRename.RenamePlaylist(this.playlistId, renameText)
           .then(res => {
               console.log('success');
