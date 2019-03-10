@@ -2,26 +2,29 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 6.2.2.
 
-## Development server
+## Get started blyat
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+### Clone the repo blyat
 
-## Code scaffolding
+```shell
+git clone https://github.com/Migiway/blyat.git
+cd blyat
+```
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+### Install npm blyat packages
 
-## Build
+Install the `npm` packages described in the `package.json` and verify that it works:
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+```shell
+npm install
+npm update
+```
 
-## Running unit tests
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+## Development blyat server
 
-## Running end-to-end tests
+Run `ng serve` for a dev server. Navigate to `http://localhost:4200/blyat`. The app will automatically reload if you change any of the source files.
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
+## Enjoy blyat website
 
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+xoxo
