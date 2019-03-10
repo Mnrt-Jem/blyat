@@ -4,7 +4,7 @@ Style
 
 /* sidebar */
 .sidebar{
-    width:18%;
+    width:250px;
     height: 100%;
     background: #1c1c1c;
     float:left;
@@ -256,3 +256,12 @@ Style
     background:#fff;
     color:#00a99d;
 }*/
+
+@media screen and (max-width: 1024px) {
+    span {
+        display: none;
+    }
+    .sidebar {
+        width: 55px;
+    }
+}

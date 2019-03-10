@@ -179,3 +179,17 @@ Style
 {
     margin-left: 1rem;
 }
+
+@media screen and (max-width: 1024px) {
+    .content {
+        margin-left: 0px;
+        width: 100%;
+        padding-left: 40px;
+    }
+    .preview
+    {
+        display: inline-grid;
+        align-items: center;
+    }
+
+}

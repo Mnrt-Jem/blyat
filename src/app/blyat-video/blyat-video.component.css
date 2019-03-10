@@ -2,7 +2,7 @@
     background: #121212;
     color:#fff;
     float:left;
-    width: 84%;
+    width: 85%;
     margin-top: 65px;
     margin-left: 245px;
     margin-top: 65px;
@@ -119,6 +119,7 @@ p {
     letter-spacing: .007px;
     border: 0;
     float:right;
+    margin-right: 10%;
 }
 .yt-button:hover {
     color: white;
@@ -131,4 +132,12 @@ p {
     font-size:12px;
     font-family: Arial, Helvetica, sans-serif;
     background-color:#121212;
+}
+
+@media screen and (max-width: 1024px) {
+    .content {
+        margin-left: 10px;
+        width: 100%;
+    }
+
 }

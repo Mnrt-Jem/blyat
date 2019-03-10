@@ -7,7 +7,7 @@ Style
     background: #121212;
     color:#fff;
     float:left;
-    width: 84%;
+    width: 85%;
     min-height: 1000px;
     margin-top: 65px;
     margin-left: 245px;
@@ -27,5 +27,13 @@ Style
     color:#2d2d2d;
 }
 .part{
+
+}
+
+@media screen and (max-width: 1024px) {
+    .content {
+        margin-left: 0px;
+        width: 100%;
+    }
 
 }

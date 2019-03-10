@@ -29,3 +29,11 @@ Style
 .part{
     margin: 1.5rem 2rem 0 6rem;
 }
+
+@media screen and (max-width: 1024px) {
+    .content {
+        margin-left: 0px;
+        width: 100%;
+    }
+
+}
